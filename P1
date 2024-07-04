@@ -1,0 +1,7 @@
+        public SqlCommand NewSqlCommand(string pDBname, string pCommandText)
+        {
+            SqlCommand cmd = NewSqlCommand(pDBname);
+            cmd.CommandText = pCommandText;
+
+            return cmd;
+        }
